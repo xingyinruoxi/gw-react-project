@@ -1,0 +1,99 @@
+@charset "utf-8";
+html {
+  font-size: 13.33333333vw;
+}
+/* 移动端点击a链接出现蓝色背景问题解决 */
+a:link,
+a:active,
+a:visited,
+a:hover {
+  background: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+img,
+a {
+  -webkit-touch-callout: none;
+}
+img {
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a,
+button,
+input {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+}
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+body,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+p {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Helvetica, Arial, Microsoft YaHei, "\\5FAE软雅黑", STHeitiSC-Light, simsun, "\\5B8B体", WenQuanYi Zen Hei, WenQuanYi Micro Hei, sans-serif;
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: 0.32rem;
+}
+/*======覆盖苹果手机input提交样式======*/
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  -webkit-appearance: none;
+}
+/*ios系统中元素被触摸时产生的半透明灰色遮罩去掉*/
+a,
+button,
+input,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /*-webkit-user-modify:read-write-plaintext-only; */
+}
+/*input type=number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f8f8f8;
+}
