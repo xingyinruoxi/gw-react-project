@@ -3,9 +3,10 @@ import React, {
 } from "react";
 import BScroll from 'better-scroll'
 import './assets/css/index.less'
+import {Link} from 'react-router-dom'
 export default class  extends Component {
     componentDidMount(props) {
-        // console.log(this.props);
+        console.log(this.props);
         console.log(this.refs.wrap);
         new BScroll(this.refs.wrap)
     }
@@ -14,6 +15,7 @@ export default class  extends Component {
         return (
             <>
                 <h1>我是首页！！！</h1>
+                <Link to={'/news'}>news</Link>
                 <div className="wrap" ref={'wrap'}>
                     <div className="content">
                         <ul>

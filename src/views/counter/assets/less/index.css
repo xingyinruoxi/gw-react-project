@@ -1,0 +1,10 @@
+.page-counter {
+  padding: 15px;
+  font-size: .8rem;
+}
+.page-counter button {
+  margin: 0 8px;
+  width: 0.8rem;
+  height: 0.8rem;
+  font-size: .6rem;
+}
