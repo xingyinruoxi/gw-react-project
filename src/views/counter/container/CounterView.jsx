@@ -4,11 +4,11 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { addFun, subFun } from './CounterViewRedux';
 
-// @connect(
-//     // state => ({counter: state.counter})
-//     // dispatch => bindActionCreators({listMachineAction}, dispatch)
-// )
-class Counter extends Component {
+@connect(
+    state => ({counter: state.counter}),
+    dispatch => bindActionCreators({addFun, subFun}, dispatch)
+)
+ class Counter extends Component {
 	render() {
 		let { counter, subFun, addFun } = this.props;
 		return (
@@ -25,14 +25,15 @@ class Counter extends Component {
 	}
 }
 
-const mapStateToProps = state => {
-	let { counter } = state;
-	return {
-		counter
-	};
-};
+// const mapStateToProps = state => {
+// 	let { counter } = state;
+// 	return {
+// 		counter
+// 	};
+// };
 
-export default connect(
-	mapStateToProps,
-	dispatch => bindActionCreators({ addFun, subFun }, dispatch)
-)(Counter);
+// export default connect(
+// 	mapStateToProps,
+// 	dispatch => bindActionCreators({ addFun, subFun }, dispatch)
+// )(Counter);
+export default Counter
