@@ -1,12 +1,15 @@
 // import { routerReducer } from 'react-router-redux';
-import { combineReducers } from 'redux';
+import {
+    combineReducers
+} from 'redux';
 
 // import {shopReducer as shop} from 'route/Shop';
 // import {goodsDetailReducer as goodsDetail} from 'route/GoodsDetail';
 // import {cartViewReducer as cart} from 'route/Cart';
-function counter(){
-    return 30;
-}
+import {
+    counter
+} from './../views/counter/container/CounterViewRedux'
+
 export default combineReducers({
     // router: routerReducer,
     // shop,
