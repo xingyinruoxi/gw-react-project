@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import './../assets/less/index.less';
 import { bindActionCreators } from 'redux';
@@ -23,6 +24,26 @@ class Counter extends Component {
 			</div>
 		);
 	}
+=======
+import React, { Component } from "react";
+import { connect } from 'react-redux'
+import "./../assets/less/index.less";
+// @connect(state => ({
+  // cartInfo: state.cart.cartInfo
+  // console.log(state)
+//   counter: 6
+// }))
+export default class extends Component {
+  render() {
+    return (
+      <div className="page page-counter">
+        <button className="increase">+</button>
+        {10}
+        <button className="reduce">-</button>
+      </div>
+    );
+  }
+>>>>>>> d198f8eab1505101581140f8b519e8f75ff93172
 }
 
 const mapStateToProps = state => {
