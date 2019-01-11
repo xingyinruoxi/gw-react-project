@@ -13,6 +13,7 @@ class Counter extends Component {
 		let { counter, subFun, addFun } = this.props;
 		return (
 			<div className="page page-counter">
+			<div>计数器</div>
 				<button className="increase" onClick={addFun}>
 					+
 				</button>

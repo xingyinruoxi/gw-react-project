@@ -6,11 +6,25 @@ import App from "./App";
 import "./common/less/base.less";
 import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render(
-  <Provider store = {store} >
-    <App />
-  </Provider>,
-  document.getElementById("root")
-);
+function render() {
+  ReactDOM.render(
+      <Provider store={store}>
+          {/* <ConnectedRouter history={history}> */}
+          <App />
+          {/* </ConnectedRouter> */}
+      </Provider>
+      ,
+      document.getElementById('root')
+  );
+};
+
+render();
+
+if (module.hot) {
+  module.hot.accept('./App', () => {
+      render();
+  });
+
+}
 
 serviceWorker.unregister();

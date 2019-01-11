@@ -1,10 +1,10 @@
 const ADD = 'add';
 const SUB = 'sub';
 //reducer
-export function counter(state=10, action) {
+export function counter(state=19, action) {
     switch(action.type){
         case ADD:
-            return state+1 ;
+            return state+7 ;
         case SUB:
             return state-1 ;
         default:

@@ -14,7 +14,7 @@ export default class  extends Component {
     render() {
         return (
             <>
-                <h1>我是首页！！！</h1>
+                <h1>我是首3456789页啊天下第一！！</h1>
                 <Link to={'/news'}>news</Link>
                 <div className="wrap" ref={'wrap'}>
                     <div className="content">
