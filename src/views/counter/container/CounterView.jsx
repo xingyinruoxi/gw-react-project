@@ -5,10 +5,10 @@ import { connect } from 'react-redux';
 import { addFun, subFun } from './CounterViewRedux';
 
 @connect(
-    state => ({counter: state.counter}),
-    dispatch => bindActionCreators({addFun, subFun}, dispatch)
+	state => ({ counter: state.counter }),
+	dispatch => bindActionCreators({ addFun, subFun }, dispatch)
 )
- class Counter extends Component {
+class Counter extends Component {
 	render() {
 		let { counter, subFun, addFun } = this.props;
 		return (
@@ -36,4 +36,4 @@ import { addFun, subFun } from './CounterViewRedux';
 // 	mapStateToProps,
 // 	dispatch => bindActionCreators({ addFun, subFun }, dispatch)
 // )(Counter);
-export default Counter
+export default Counter;
