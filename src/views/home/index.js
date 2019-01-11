@@ -16,6 +16,7 @@ export default class  extends Component {
             <>
                 <h1>我是首3456789页啊天下第一！！</h1>
                 <Link to={'/news'}>news</Link>
+                <Link to={'/counter'}>counter</Link>
                 <div className="wrap" ref={'wrap'}>
                     <div className="content">
                         <ul>

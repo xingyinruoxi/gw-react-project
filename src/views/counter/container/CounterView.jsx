@@ -5,11 +5,15 @@ import { connect } from 'react-redux';
 import { addFun, subFun } from './CounterViewRedux';
 
 @connect(
-	state => ({ counter: state.counter }),
+	state =>{
+		console.log(state)
+		return { counter: state.counter }
+	},
 	dispatch => bindActionCreators({ addFun, subFun }, dispatch)
 )
 class Counter extends Component {
 	render() {
+		console.log(this.props)
 		let { counter, subFun, addFun } = this.props;
 		return (
 			<div className="page page-counter">
