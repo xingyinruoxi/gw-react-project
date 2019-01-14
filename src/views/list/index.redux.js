@@ -6,7 +6,8 @@ const GET_LIST = "GET_LIST/list/获取列表数据";
 
 export default function list(state = initState, payload) {
     let {
-        type
+        type,
+        data
     } = payload;
     console.log('payload', payload);
 
