@@ -1,0 +1,11 @@
+.fade-init {
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin-top: 20px;
+  opacity: 0;
+  transition: 800ms;
+}
+.fade-entered {
+  opacity: 1;
+}

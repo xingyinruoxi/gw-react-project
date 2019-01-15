@@ -35,7 +35,7 @@ const shouldInlineRuntimeChunk = process.env.INLINE_RUNTIME_CHUNK !== 'false';
 const useTypeScript = fs.existsSync(paths.appTsConfig);
 
 // style files regexes
-const cssRegex = /\.css$/;
+const cssRegex = /\.(css)$/;
 const cssModuleRegex = /\.module\.css$/;
 const sassRegex = /\.(css|less)$/;
 const sassModuleRegex = /\.module\.(css|less)$/;

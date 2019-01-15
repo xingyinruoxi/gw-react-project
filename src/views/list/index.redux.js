@@ -7,9 +7,9 @@ const GET_LIST = "GET_LIST/list/获取列表数据";
 export default function list(state = initState, payload) {
     let {
         type,
-        data
+        // data
     } = payload;
-    console.log('payload', payload);
+    // console.log('payload', payload);
 
     switch (type) {
         case GET_LIST:

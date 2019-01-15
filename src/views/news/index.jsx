@@ -5,6 +5,6 @@ export default class Class extends Component {
 		// console.log(this.props);
 	}
 	render() {
-		return <div className="class-name">新闻列表 </div>;
+		return <div className="page-news">新闻列表 </div>;
 	}
 }
