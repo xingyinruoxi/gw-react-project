@@ -6,14 +6,14 @@ import './assets/css/index.less'
 import {Link} from 'react-router-dom'
 export default class  extends Component {
     componentDidMount(props) {
-        console.log(this.props);
-        console.log(this.refs.wrap);
+        // console.log(this.props);
+        // console.log(this.refs.wrap);
         new BScroll(this.refs.wrap)
     }
 
     render() {
         return (
-            <>
+            <div>
                 <h1>我是首3456789页啊天下第一！！</h1>
                 <Link to={'/news'}>news</Link>
                 <Link to={'/counter'}>counter</Link>
@@ -33,7 +33,7 @@ export default class  extends Component {
                         </ul>
                     </div>
                 </div>
-            </>
+            </div>
 
         );
     }
