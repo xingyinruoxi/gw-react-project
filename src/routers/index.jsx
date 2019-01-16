@@ -12,7 +12,7 @@ const About = Loadable({
 	loading: Loading,
 });
 const News = Loadable({
-	loader: () => import('../views/news/index'),
+	loader: () => import('../views/news'),
 	loading: Loading,
 });
 const List = Loadable({
@@ -32,7 +32,7 @@ const Counter = Loadable({
 // 	loading: Loading,
 // });
 const Transition = Loadable({
-	loader: () => import('../views/transiton/index'),
+	loader: () => import('../views/transiton'),
 	loading: Loading,
 });
 const Routers = () => (
